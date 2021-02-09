@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6252222"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/btnEnter"
+        android:layout_width="783dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:backgroundTint="#BF4040"
+        android:text="@string/enter"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="@string/courses"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnter" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="@string/pending_in_progress"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tvPendingCourses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/courses__tv_pending"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="@string/completed"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tvCompletedCourses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/courses__tv_completed"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/tvPendingCourses" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="@string/dropped"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/tvDroppedCourses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/courses__tv_dropped"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/tvCompletedCourses" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="120dp"
+        android:text="@string/assessments"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnter" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="249dp"
+        android:text="@string/pending"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/tvPendingCourses"
+        app:layout_constraintTop_toTopOf="@+id/tvPendingAsmts" />
+
+    <TextView
+        android:id="@+id/tvPendingAsmts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/asmts__tv_pending"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="312dp"
+        android:text="@string/passed"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/tvCompletedCourses"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/tvPassedAsmts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/asmts__tv_passed"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/tvPendingAsmts" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="327dp"
+        android:text="@string/failed"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/tvDroppedCourses"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/tvFailedAsmts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/asmts__tv_failed"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/tvPassedAsmts" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
